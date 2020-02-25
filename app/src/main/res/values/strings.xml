@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Car</string>
+    <string name="accelerate">Accelerate</string>
+    <string name="decelerate">Decelerate</string>
+    <string name="fuel_label">Fuel:</string>
+    <string name="speed_label">Speed:</string>
+    <string name="string_placeholder">xxxxxxxxx</string>
+</resources>

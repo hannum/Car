@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/register_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Car register n:o"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/speed_label_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="@string/speed_label"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/register_textView" />
+
+    <TextView
+        android:id="@+id/speed_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/string_placeholder"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/speed_label_textView"
+        app:layout_constraintStart_toEndOf="@+id/speed_label_textView" />
+
+    <TextView
+        android:id="@+id/fuel_label_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="48dp"
+        android:text="@string/fuel_label"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/speed_textView"
+        app:layout_constraintStart_toEndOf="@+id/speed_textView" />
+
+    <TextView
+        android:id="@+id/fuel_textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="@string/string_placeholder"
+        android:textSize="18sp"
+        app:layout_constraintBaseline_toBaselineOf="@+id/fuel_label_textView"
+        app:layout_constraintStart_toEndOf="@+id/fuel_label_textView" />
+
+    <Button
+        android:id="@+id/accelerate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="48dp"
+        android:onClick="accelerate"
+        android:text="@string/accelerate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/speed_label_textView" />
+
+    <Button
+        android:id="@+id/deccelerate_button"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:layout_marginStart="48dp"
+        android:onClick="decelerate"
+        android:text="@string/decelerate"
+        app:layout_constraintBaseline_toBaselineOf="@+id/accelerate_button"
+        app:layout_constraintStart_toEndOf="@+id/accelerate_button" />
+
+</android.support.constraint.ConstraintLayout>
